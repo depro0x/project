@@ -10,7 +10,7 @@ void mToCm(){
 void kmToM(){
     float inputValue, outputValue;
     printf("Enter value in kilometer: ");
-    scanf("%f", inputValue);
+    scanf("%f", &inputValue);
     outputValue = inputValue * 1000;
     printf("Value in Meter is: %f", outputValue);
 }
@@ -101,7 +101,7 @@ int main() {
             printf("2. Pound to Gram\n");
             printf("3. Other\n");
             printf("Enter your choice: ");
-            scanf("%d", choice2);
+            scanf("%d", &choice2);
             switch(choice2) {
                 case 1:
                     kgToGm();
@@ -122,7 +122,7 @@ int main() {
             printf("2. Fahrenheit to Kelvin\n");
             printf("3. Kelvin to Celsious\n");
             printf("4. Other\n");
-            scanf("%d", choice2);
+            scanf("%d", &choice2);
             switch(choice2) {
                 case 1:
                     cToF();
